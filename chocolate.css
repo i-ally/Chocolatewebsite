@@ -1,0 +1,325 @@
+/* This is for boxing the website so no one can change the original width, padding and etc */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* The container is whole i.e it contains everything and it is a class name container  */
+
+.container {
+    width: 100%;
+    margin-right: auto;
+}
+
+body {
+    color: #603808;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.image {
+    background: url("chocolate.jpg");
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    /* For the background image to shown completely */
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: index 4;
+}
+
+
+/* navbar is like the flexbox that is home and call thing */
+
+.navbar {
+    background-color: transparent;
+    position: fixed;
+    top: auto;
+    /* for the navigation bar to stick at top */
+    margin-top: calc(var(--blocked--site--scroll--margin-top)* 1);
+}
+
+.navbar ul {
+    overflow: auto;
+    list-style: none;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 16px;
+}
+
+.navbar li a {
+    font-size: larger;
+    padding: 16px 15px;
+    text-decoration: none;
+    color: #6f4518;
+}
+
+.navbar li a:hover {
+    color: #d1a19d;
+    text-decoration: underline;
+}
+
+.search {
+    float: right;
+    color: #6f4518;
+    padding: 6px 80px;
+}
+
+.navbar input {
+    border: 4px solid #6f4518;
+    width: 150px;
+    padding: 5px 17px;
+}
+
+.main {
+    position: absolute;
+    text-align: center;
+}
+
+.heading {
+    background-color: transparent;
+    color: #462a20;
+    border: 5px solid transparent;
+    font-family: 'merienda';
+    font-size: larger;
+    align-items: center;
+    margin-top: 80px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-felx;
+    display: flex;
+    flex-direction: column;
+    padding: 110px 580px;
+}
+
+@media(max-width:1000px) {
+    section {
+        padding: 10px 5px;
+    }
+}
+
+@media(max-width:1000px) {
+    section {
+        padding: 8px 2px;
+    }
+}
+
+@media(max-width:600px) {
+    section {
+        padding: 15px 3px;
+    }
+}
+
+section p {
+    text-align: center;
+    padding: 12px 30px;
+    line-height: 2;
+}
+
+.about-content {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-felx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-content li {
+    padding: 20%;
+    height: 290px;
+    background-clip: content-box;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
+.image1 {
+    background: url("chocolate3.jpg");
+    /* For the background image to shown completely */
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: 1;
+}
+
+#abo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: #ede0d4;
+    align-items: baseline;
+}
+
+#history {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ede0d4;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#about {
+    color: #ede0d4;
+}
+
+.about-right {
+    display: block;
+    font-family: 'Gotham_Rounded_Book', serif;
+    font-size: 13px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-align: justify;
+    margin-top: -250px;
+    margin-bottom: 600px;
+    font-family: Apple Chancery, cursive;
+}
+
+.about-area p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    line-height: 1.5px;
+    text-align: right;
+    padding: 10px 25px;
+}
+
+.section-title {
+    text-transform: uppercase;
+    font-size: large;
+    margin-bottom: 5%;
+}
+
+.about-right h2 {
+    margin-bottom: 3px;
+}
+
+.h2 {
+    font: Roboto;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.htmltable {
+    display: table;
+    background: #c38e70;
+    padding: 5rem;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+table {
+    background: #9d6b53;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+    text-align: center;
+    margin: auto;
+    border: 1px solid #dedede;
+    padding: 1rem;
+    width: 50%;
+}
+
+.table {
+    display: table;
+    width: 50%;
+}
+
+.tr {
+    display: table-row;
+}
+
+.thead {
+    display: table-header-group;
+}
+
+.tbody {
+    display: table-row-group;
+}
+
+.col {
+    display: table-column;
+}
+
+.colgroup {
+    display: table-column-group;
+}
+
+.td,
+.th {
+    display: table-cell;
+    width: 50%;
+}
+
+.caption {
+    display: table-caption;
+}
+
+.table,
+.thead,
+.tbody,
+.tfoot,
+.tr,
+.td,
+.th {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.table {
+    background: #fff;
+    margin: auto;
+    border: none;
+    padding: 0;
+    margin-bottom: 5rem;
+}
+
+.th {
+    font-weight: 700;
+    border: 1px solid #dedede;
+}
+
+.th:nth-child(odd) {
+    border-right: none;
+}
+
+.td {
+    font-weight: 300;
+    border: 1px solid #dedede;
+    border-top: none;
+}
+
+.td:nth-child(odd) {
+    border-right: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #83c5be;
+}
+
+a:visited {
+    color: #8e9aaf;
+}
+
+a:active {
+    color: #312244;
+}
